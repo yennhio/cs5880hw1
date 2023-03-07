@@ -1,3 +1,4 @@
+package inheritance;
 public class Employee {
     
     String firstName;

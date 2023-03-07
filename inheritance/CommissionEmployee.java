@@ -1,3 +1,4 @@
+package inheritance;
 public class CommissionEmployee extends Employee {
     
     int commissionRate;

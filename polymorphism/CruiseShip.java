@@ -15,4 +15,9 @@ public class CruiseShip extends Ship {
         return maxNumOfPassengers;
     }
 
+    @override
+    public void printShipInfo() {
+        System.out.println("Ship name: " + getShipName() + " Max num of passengers: " + getMaxNumOfPassengers());
+    }
+
 }

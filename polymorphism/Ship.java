@@ -25,7 +25,7 @@ public class Ship {
         return yearBuilt;
     }
 
-    void printShipNameAndYear() {
+    void printShipInfo() {
         System.out.println("Ship name: " + shipName + " Year: " + yearBuilt);
     }
 

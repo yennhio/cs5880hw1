@@ -1,3 +1,4 @@
+package polymorphism;
 
 public class Ship {
     
@@ -26,7 +27,7 @@ public class Ship {
     }
 
     void printShipInfo() {
-        System.out.println("Ship name: " + shipName + " Year: " + yearBuilt);
+        System.out.println("Ship name: " + getShipName() + " Year: " + getYearBuilt());
     }
 
 

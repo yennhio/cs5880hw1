@@ -4,8 +4,16 @@ public class Ship {
     String shipName;
     int yearBuilt;
     
-    public Ship(String newShipName, int newYearBuilt) {
+    public Ship() {
+        shipName = "";
+        yearBuilt = 0;
+    }
+
+    public void setShipName(String newShipName) {
         this.shipName = newShipName;
+    }
+
+    public void setYearBuilt(int newYearBuilt) {
         this.yearBuilt = newYearBuilt;
     }
 

@@ -4,7 +4,7 @@ public class Instructor {
     
     private String firstName;
     private String lastName;
-    private int officeNumber;
+    private String officeNumber;
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -14,7 +14,7 @@ public class Instructor {
         this.lastName = lastName;
     }
 
-    public void setOfficeNumber(int officeNumber) {
+    public void setOfficeNumber(String officeNumber) {
         this.officeNumber = officeNumber;
     }
 
@@ -26,9 +26,9 @@ public class Instructor {
         return lastName;
     }
 
-    public int getOfficeNumber() {
+    public String getOfficeNumber() {
         return officeNumber;
     }
 
-    
+
 }

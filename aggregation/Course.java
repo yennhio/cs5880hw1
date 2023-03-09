@@ -33,8 +33,8 @@ public class Course {
 
     public void printCourseInfo() {
         System.out.println("Course name: " + courseName);
-        System.out.println("Instructor: " + instructor.getFirstName() + " " + instructor.getLastName() + "office " + instructor.getOfficeNumber());
-        System.out.println("Textbook title and author: " + textbook.getBookTitle() + " by " + textbook.getAuthor());
+        System.out.println("Instructor: " + instructor.getFirstName() + " " + instructor.getLastName() + " office " + instructor.getOfficeNumber());
+        System.out.println("Textbook: " + textbook.getBookTitle() + " by " + textbook.getAuthor() + ", published by " + textbook.getPublisher());
 
     }
 

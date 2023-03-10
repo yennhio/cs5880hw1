@@ -13,5 +13,9 @@ public class File {
         return fileName;
     }
 
+    public void printFileName() {
+        System.out.println(fileName);
+    }
+
 
 }

@@ -13,10 +13,6 @@ public class File {
         return fileName;
     }
 
-    public void printFileName() {
-        System.out.println(fileName);
-    }
-
     public void print() {
         System.out.println(fileName);
     }

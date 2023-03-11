@@ -1,17 +1,16 @@
 package composition;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Folder {
     
     private String folderName;
-    private List<File> files;
-    private List<Folder> subfolders;
+    private ArrayList<File> files;
+    private ArrayList<Folder> subfolders;
 
     public Folder() {
-        this.files = new ArrayList<>();
-        this.subfolders = new ArrayList<>();
+        this.files = new ArrayList<File>();
+        this.subfolders = new ArrayList<Folder>();
     }
 
     public void setFolderName(String folderName) {
@@ -20,14 +19,6 @@ public class Folder {
 
     public String getFolderName() {
         return folderName;
-    }
-
-    public List<File> getFile() {
-        return files;
-    }
-
-    public List<Folder> getSubfolders() {
-        return subfolders;
     }
 
     public void addSubfolder(Folder subfolder) {
@@ -40,27 +31,26 @@ public class Folder {
 
     }
 
+    public void delete() {
+        for (Folder folder : subfolders) {
+            folder.delete();
+        }
+
+        this.subfolders.clear();
+        this.files.clear();
+    }
+
     public void print() {
         System.out.println(folderName);
 
-        for (int i=0; i<subfolders.size(); i++) {
-            subfolders.get(i).print();
+        for (Folder folder : subfolders) {
+            folder.print();
         }
 
-        for (int j=0; j<files.size(); j++) {
-            files.get(j).print();
+        for (File file : files) {
+            file.print();
         }
 
-    }
-
-    public void delete() {
-        for (int i=0; i<subfolders.size(); i++) {
-            subfolders.get(i).delete();
-        }
-
-        for (int j=0; j<files.size(); j++) {
-            files.get(j).delete();
-        }
     }
 
 

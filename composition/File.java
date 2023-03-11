@@ -17,5 +17,13 @@ public class File {
         System.out.println(fileName);
     }
 
+    public void print() {
+        System.out.println(fileName);
+    }
+
+    public void delete() {
+        
+    }
+
 
 }

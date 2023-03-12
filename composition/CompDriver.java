@@ -18,8 +18,14 @@ public class CompDriver {
         Folder publicFolder = new Folder();
         Folder includePath = new Folder();
         Folder remoteFiles = new Folder();
+        File htaccess = new File();
+        File htrouter = new File();
+        File index = new File();
 
-        
+        htaccess.setFileName(".htaccess");
+        htrouter.setFileName(".htrouter.php");
+        index.setFileName("index.html");
+
         phpdemo1.setFolderName("php_demo1");
         sourceFiles.setFolderName("Source Files");
         phalcon.setFolderName(".phalcon");
@@ -38,7 +44,9 @@ public class CompDriver {
         phpdemo1.addSubfolder(sourceFiles);
         phpdemo1.addSubfolder(includePath);
         phpdemo1.addSubfolder(remoteFiles);
-
+        phpdemo1.addFile(htaccess);
+        phpdemo1.addFile(htrouter);
+        phpdemo1.addFile(index);
 
         sourceFiles.addSubfolder(phalcon);
         sourceFiles.addSubfolder(app);

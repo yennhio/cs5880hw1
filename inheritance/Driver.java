@@ -57,6 +57,16 @@ public class Driver {
         mike.setSSN("666-66-6666");
         mike.setBaseSalary(95000);
 
+
+        System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s %-15s %-15s %-15s\n", "First", "Last", "SSN", "Weekly Salary", "Wage", "Hours worked", "Com rate", "Gross salary", "Base salary");
+        System.out.printf("%-15s %-15s %-15s $%-15d %-15s %-15s %-15s %-15s %-15s\n", joe.getFirstName(), joe.getLastName(), joe.getSSN(), joe.getWeeklySalary(), "", "","","","");
+        System.out.printf("%-15s %-15s %-15s %-15s $%-15d %-15s %-15s %-15s %-15s\n", stephanie.getFirstName(), stephanie.getLastName(), stephanie.getSSN(), "", stephanie.getWage(), stephanie.getHoursWorked(), "", "","");
+        System.out.printf("%-15s %-15s %-15s %-15s $%-15d %-15s %-15s %-15s %-15s\n", mary.getFirstName(), mary.getLastName(), mary.getSSN(), "", mary.getWage(), mary.getHoursWorked(), "","","");
+        System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s %-15s $%-15d %-15s\n", nicole.getFirstName(), nicole.getLastName(), nicole.getSSN(), "", "", "", nicole.getCommissionRate(), nicole.getGrossSales(), "");
+        System.out.printf("%-15s %-15s %-15s $%-15d %-15s %-15s %-15s %-15s %-15s\n", renwa.getFirstName(), renwa.getLastName(), renwa.getSSN(), renwa.getWeeklySalary(),"","","","","");
+        System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s %-15s %-15s $%-15d\n", mike.getFirstName(), mike.getLastName(), mike.getSSN(), "", "", "", "", "", mike.getBaseSalary());
+        System.out.printf("%-15s %-15s %-15s %-15s %-15s %-15s %-15s $%-15d %-15s\n", mahnaz.getFirstName(), mahnaz.getLastName(), mahnaz.getSSN(), "", "", "", mahnaz.getCommissionRate(), mahnaz.getGrossSales(), "");
+
     }
     
 }

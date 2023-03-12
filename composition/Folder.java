@@ -38,6 +38,7 @@ public class Folder {
 
         this.subfolders.clear();
         this.files.clear();
+        this.subfolders.remove(this);
     }
 
     public void print() {
